@@ -1,6 +1,6 @@
 {
   "name": "@xiupengfei/vue3-event-bus",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "main": "dist/vue3-event-bus.umd.js",
   "module": "dist/vue3-event-bus.es5.js",
   "typings": "dist/vue3-event-bus.d.ts",
@@ -33,7 +33,7 @@
     "start:lib": "rollup -c rollup.config.ts -w"
   },
   "dependencies": {
-    "@xiupengfei/vue3-event-bus": "^0.0.3",
+    "@xiupengfei/vue3-event-bus": "^0.0.5",
     "vue": "^3.2.25"
   },
   "devDependencies": {

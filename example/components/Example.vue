@@ -4,7 +4,7 @@
  * @Author: pengfei.xiu
  * @Date: 2022-01-23 12:47:15
  * @LastEditors: pengfei.xiu
- * @LastEditTime: 2022-01-23 15:55:51
+ * @LastEditTime: 2022-01-23 16:49:53
 -->
 <template>
   <div>Example</div>
@@ -12,8 +12,8 @@
 <script lang="ts">
 import { defineComponent, onUnmounted } from 'vue'
 
-// import useEventBus from '../../lib/vue3-event-bus'
-import useEventBus from '@xiupengfei/vue3-event-bus'
+import useEventBus from '../../lib/vue3-event-bus'
+// import useEventBus from '@xiupengfei/vue3-event-bus'
 
 export default defineComponent({
   name: 'Example',

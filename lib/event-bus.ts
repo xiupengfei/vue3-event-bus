@@ -4,7 +4,7 @@
  * @Author: pengfei.xiu
  * @Date: 2022-01-23 12:49:52
  * @LastEditors: pengfei.xiu
- * @LastEditTime: 2022-01-23 15:07:19
+ * @LastEditTime: 2022-01-23 17:18:09
  */
 
 export interface ICallbackFun extends Function {
@@ -28,7 +28,7 @@ class EventBus {
     this.eventMap.set(key, handles)
   }
 
-  emit(key: string, payload?: any) {
+  private _emit(key: string, payload?: any) {
     const handles = this.eventMap.get(key)
     if (!Array.isArray(handles)) return
     handles.forEach((h) => {
@@ -37,6 +37,32 @@ class EventBus {
         this.off(key, h)
       }
     })
+  }
+
+  emit(key: string, payload?: any) {
+    key ??= key.trim()
+
+    if (key === '*') {
+      ;[...this.eventMap.keys()].forEach((k) => {
+        this._emit(k, payload)
+      })
+    } else if (key.startsWith('*')) {
+      const _key = key.substring(1)
+      ;[...this.eventMap.keys()]
+        .filter((k) => k.endsWith(_key))
+        .forEach((k) => {
+          this._emit(k, payload)
+        })
+    } else if (key.endsWith('*')) {
+      const _key = key.slice(0, -1)
+      ;[...this.eventMap.keys()]
+        .filter((k) => k.startsWith(_key))
+        .forEach((k) => {
+          this._emit(k, payload)
+        })
+    } else {
+      this._emit(key, payload)
+    }
   }
 
   once(key: string, cb: ICallbackFun) {

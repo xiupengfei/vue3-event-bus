@@ -1,5 +1,7 @@
 # vue3 event bus
 
+A simple event bus solution for Vue 3, no dependence.
+
 ```typescript
 // 使用
 import useEventBus from '@xiupengfei/vue3-event-bus'
@@ -21,6 +23,12 @@ off('event-name')
 
 // emit 触发
 emit('event-name', payload)
+// 触发event-name开头的所有事件
+emit('event-name*', payload)
+// 触发event-name结尾的所有事件
+emit('*event-name', payload)
+// 触发所有的所有事件
+emit('*', payload)
 ```
 
 通常情况下需要在`onUnmounted` 钩子中进行事件的解绑, 现使用`vue3-event-bus` 无需进行手动解绑。
