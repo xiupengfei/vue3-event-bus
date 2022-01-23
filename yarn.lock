@@ -281,6 +281,14 @@
   dependencies:
     vue "^3.2.25"
 
+"@xiupengfei/vue3-event-bus@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.npmmirror.com/@xiupengfei/vue3-event-bus/download/@xiupengfei/vue3-event-bus-0.0.3.tgz#97979db1a5e2febde913a0d6d902723265093c53"
+  integrity sha512-KNkyO9kSh+g4oTbVGg8CAZgKoTZrhgMXtBNlVB1BeO7Qofo0EJWVaCJfiaGnw+kyk3Mc+xzPsykdmKS1SpKHLw==
+  dependencies:
+    "@xiupengfei/vue3-event-bus" "0.0.1"
+    vue "^3.2.25"
+
 "@yarn-tool/resolve-package@^1.0.36":
   version "1.0.42"
   resolved "https://registry.npmmirror.com/@yarn-tool/resolve-package/download/@yarn-tool/resolve-package-1.0.42.tgz#4a72c1a77b7035dc86250744d2cdbc16292bc4f8"
