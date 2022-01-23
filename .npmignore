@@ -1,0 +1,7 @@
+.vscode
+example
+public
+lib
+node_modules
+vite.config.ts
+*.html
