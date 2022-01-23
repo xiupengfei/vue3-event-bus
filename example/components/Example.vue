@@ -12,7 +12,8 @@
 <script lang="ts">
 import { defineComponent, onUnmounted } from 'vue'
 
-import useEventBus from '../../lib/vue3-event-bus'
+// import useEventBus from '../../lib/vue3-event-bus'
+import useEventBus from '@xiupengfei/vue3-event-bus'
 
 export default defineComponent({
   name: 'Example',

@@ -1,6 +1,6 @@
 {
   "name": "@xiupengfei/vue3-event-bus",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "main": "dist/vue3-event-bus.umd.js",
   "module": "dist/vue3-event-bus.es5.js",
   "typings": "dist/vue3-event-bus.d.ts",

@@ -4,7 +4,7 @@
  * @Author: pengfei.xiu
  * @Date: 2022-01-23 12:42:15
  * @LastEditors: pengfei.xiu
- * @LastEditTime: 2022-01-23 15:56:30
+ * @LastEditTime: 2022-01-23 16:22:14
 -->
 <template>
   <div>
@@ -22,7 +22,8 @@ import { ref } from 'vue'
 import Example from '../components/Example.vue'
 import Example2 from '../components/Example2.vue'
 
-import useEventBus from '../../lib/vue3-event-bus'
+// import useEventBus from '../../lib/vue3-event-bus'
+import useEventBus from '@xiupengfei/vue3-event-bus'
 
 const { emit } = useEventBus()
 
