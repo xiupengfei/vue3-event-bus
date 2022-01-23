@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "main": "dist/vue3-event-bus.umd.js",
   "module": "dist/vue3-event-bus.es5.js",
-  "typings": "dist/types/vue3-event-bus.d.ts",
+  "typings": "dist/vue3-event-bus.d.ts",
   "files": [
     "dist"
   ],
@@ -33,6 +33,7 @@
     "start:lib": "rollup -c rollup.config.ts -w"
   },
   "dependencies": {
+    "@xiupengfei/vue3-event-bus": "0.0.1",
     "vue": "^3.2.25"
   },
   "devDependencies": {
